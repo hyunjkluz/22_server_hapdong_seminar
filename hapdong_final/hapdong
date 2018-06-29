@@ -1,0 +1,16 @@
+You have triggered an unhandledRejection, you may have forgotten to catch a Promise rejection:
+Error: Can't set headers after they are sent.
+    at validateHeader (_http_outgoing.js:494:11)
+    at ServerResponse.setHeader (_http_outgoing.js:501:3)
+    at ServerResponse.header (/Users/jinyoungkim/SOPT/hapdong/training/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/Users/jinyoungkim/SOPT/hapdong/training/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/jinyoungkim/SOPT/hapdong/training/node_modules/express/lib/response.js:256:15)
+    at ServerResponse.send (/Users/jinyoungkim/SOPT/hapdong/training/node_modules/express/lib/response.js:158:21)
+    at Promise.catch.then.catch.then.catch.err (/Users/jinyoungkim/SOPT/hapdong/training/routes/store/review.js:45:35)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+(node:50973) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 4): Error: Can't set headers after they are sent.
+(node:50973) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:50973) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 6): Error: Can't set headers after they are sent.
+(node:50973) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 8): Error: Can't set headers after they are sent.
+(node:50973) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 10): Error: Can't set headers after they are sent.
